@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/search.css" />
+  </head>
+  <body>
+    <!--header-->
+    <div class="header">
+      <div id="logo">
+        <a href="../index.html"><img src="../img/logo.png" /></a>
+      </div>
+      <div id="menu" class="menuLink">
+        <a href="../pages/about.html" style="text-decoration: none;"><p>О нас</p></a>
+        <a href="../pages/search.html" style="text-decoration: none;"><p>Поиск вакансий</p></a>
+        <a href="../pages/work.html" style="text-decoration: none;"><p>Разместить вакансию</p></a>
+        <a href="../pages/cv.html" style="text-decoration: none;"><p>Резюме</p></a>
+      </div>
+      <div id="sign">
+        <img src="../img/sign.png" />
+      </div>
+    </div>
+    <!--search-->
+    <div class="search">
+        <div id="left">
+          <p id="one">г. Каменск-Уральский</p>
+          <br /><br />
+          <p id="two">Освободим от безделья!</p>
+  
+          <form action="" method="get">
+            <div class="ser">
+              <input name="s" type="search" /><button type="submit">
+                <img src="../img/search.png" />
+              </button>
+            </div>
+            <p id="three">Поиск вакансий</p>
+          </form>
+        </div>
+        <div id="right">
+          <div id="img">
+            <img src="../img/index.png" />
+          </div>
+        </div>
+      </div>
+    <!--professions-->
+    <div class="profs">
+       <!--vacancies-->
+      <div class="vacancies">
+      <h1>Вакансии</h1>
+<div class="vac">
+<img src="../img/st.png">
+<p>Стюардесса</p>
+</div>
+
+<div class="vac">
+  <img src="../img/met.png">
+  <p>Метеоролог</p>
+  </div>
+
+  <div class="vac">
+    <img src="../img/riel.png">
+    <p>Риелтор</p>
+    </div>
+
+    <div class="vac">
+    <img src="../img/build.png">
+   <p>Механик</p>
+   </div>
+
+   <div class="vac">
+    <img src="../img/point_of_sale.png">
+    <p>Кассир</p>
+    </div>
+
+    <div class="vac">
+      <img src="../img/payments.png">
+      <p>Экономист</p>
+      </div>
+
+      <div class="vac">
+        <img src="../img/local_hospital.png">
+        <p>Медсестра</p>
+        </div>
+
+        <div class="vac">
+          <img src="../img/spa.png">
+          <p>Косметолог</p>
+          </div>
+        </div>
+    <!--filtr-->
+    <div class="filtr">
+      <h1>Фильтр</h1>
+      <div id="list">
+            <fieldset>
+                <div>
+                  <input type="radio" id="allVac" name="drone" value="allVac" checked />
+                  <label for="allVac">Все вакансии</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="beauty" name="drone" value="beauty" />
+                  <label for="beauty">Красота</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="str" name="drone" value="str" />
+                  <label for="str">Строительство</label>
+                </div>
+                <div>
+                    <input type="radio" id="it" name="drone" value="it" checked />
+                    <label for="it">IT</label>
+                  </div>
+                
+                  <div>
+                    <input type="radio" id="sales" name="drone" value="sales" />
+                    <label for="sales">Продажи</label>
+                  </div>
+                
+                  <div>
+                    <input type="radio" id="fin" name="drone" value="fin" />
+                    <label for="fin">Финансы</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="med" name="drone" value="med" checked />
+                    <label for="med">Медицина</label>
+                  </div>
+              </fieldset>
+        </div>
+        <div id="buttonKat">
+            <form action="../worker/pages/search.html" target="_blank">
+              <br /><br /><br />
+              <button>Применить</button>
+            </form>
+          </div>
+    </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+      <div class="str">
+        <a href="index.html" id="footerLink"><p>Главная</p></a>
+        <a href="search.html" id="footerLink"><p>Поиск вакансий</p></a>
+        <a href="work.html" id="footerLink"><p>Разместить вакансию</p></a>
+        <p>Все права защищены ©</p>
+      </div>
+      <div class="social">
+        <a href="https://web.telegram.org/k/"><img src="../img/tg.png" /></a>
+        <a href="https://vk.com/"><img src="../img/vk.png" /></a>
+        <a href="https://www.youtube.com/"> <img src="../img/ut.png" /></a>
+      </div>
+      <div class="tel">
+        <img src="../img/phone.png" />
+        <p>+7 900 777 77 77</p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
