@@ -47,7 +47,9 @@
       </div>
     </div>
     <!--forms-->
+    <form>
     <div class="forms">
+  
         <p>Сфера</p>
             <select id="card" name="usercard">
               <option value="visa">Красота</option>
@@ -58,16 +60,18 @@
               <option value="amex">Медицина</option>
             </select>
             <p>Что требуется</p>
-            <input type="text" id="text" name="text">
+            <input type="text" id="text" name="text" required>
             <p>Зарплата( руб.)</p>
-            <input type="number" id="price" name="price">
+            <input type="number" id="price" name="price" required>
             <p>Телефон</p>
-            <input type="phone" id="number" name="phonenumber" placeholder="+7(123)123‒45‒67">
+            <input type="phone" id="number" name="phonenumber" placeholder="+7(123)123‒45‒67" required>
             <p>Почта</p>
-            <input type="email" id="mail" name="usermail">
-
-
-    </div>
+            <input type="email" id="mail" name="usermail" required><br><br>
+          </div>
+          <div class="but">
+            <input type="submit" value="Опубликовать">
+          </div>
+        </form>
     <!--footer-->
     <div class="footer">
       <div class="str">
@@ -84,6 +88,7 @@
       <div class="tel">
         <img src="../img/phone.png" />
         <p>+7 900 777 77 77</p>
+
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

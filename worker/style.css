@@ -34,15 +34,7 @@ body {
   height: 60px;
 }
 
-.menuLink a p  {
-  background: red;
-  color: #ffffff; /* Цвет обычной ссылки */ 
-  text-decoration: none; /* Убираем подчёркивание у ссылок */
-}  
- a:hover {
-  font-size: 64px;
-  color: #f64c71; /* Цвет ссылки при наведении */ 
-}
+
 /* search */
 .ser {
   display: flex;
