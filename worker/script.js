@@ -1,3 +1,4 @@
+//slider
 let index = 0;
 displayImages();
 function displayImages() {
@@ -15,9 +16,3 @@ function displayImages() {
     images[index - 1].style.display = "block";
     setTimeout(displayImages, 2500);
 }
-let but = document.querySelector('.but');
-console.log('butt');
-but.addEventListener('submit', (e) => {
-    e.preventDefault();
-    console.log('hjkhjk');
-})
