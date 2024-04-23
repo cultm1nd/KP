@@ -34,7 +34,15 @@ body {
   height: 60px;
 }
 
-
+.menuLink a {
+  color: #ffffff;
+}
+.menuLink a {
+  text-decoration: none;
+}
+.menuLink a:hover{
+  color: #f64c71;
+}
 /* search */
 .ser {
   display: flex;
@@ -81,22 +89,11 @@ body {
   margin-left: 10px;
   font-size: 20px;
 }
-
-/* .slider */
-.image-slideshow{
-min-width: 450px !important;
-min-height: 500px !important;
-position: relative;
-object-fit: cover;
-margin-top: 20px !important;
-}
-.fade {
-animation-name: fade;
-animation-duration: 2s;
-}
-@keyframes fade {
-from {opacity: .5}
-to {opacity: 1}
+.search #right img {
+  width: 450px;
+  height: 450px;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 /* katalog */
 .katalog {
@@ -167,60 +164,100 @@ to {opacity: 1}
   text-align: center;
   margin-bottom: 30px;
 }
-
 .work #works {
-  width: 350px;
-  height: 350px;
+  /* width: 650px;
+  height: 350px; */
+  margin-bottom: 50px;
   display: grid;
-  grid-template-columns:350px 350px 350px;
+  grid-template-columns: auto auto auto;
   justify-content: center;
   column-gap: 100px;
   margin-left: 50px;
   color: white;
-  background-image: url("../worker/img/gradient.png");
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* animate */
-.scale :hover {
-  width: 400px;
-  height: 400px;
-  margin: 30px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-  font-size: 24px;
-  font-family: 'Roboto', sans-serif;         
+#w1,
+#w2,
+#w3 {
+  width: 350px;
+  height: 350px;
+  /* border-radius: 30px; */
+  background-position: center;
   background-repeat: no-repeat;
-  background-image:   linear-gradient(to right, #BFE2FF 100%, #BFE2FF 100%),
-      linear-gradient(to bottom, #BFE2FF 100%, #BFE2FF 100%),
-      linear-gradient(to right, #BFE2FF 100%, #BFE2FF 100%),
-      linear-gradient(to bottom, #BFE2FF 100%, #BFE2FF 100%);
-  background-size:    100% 6px, 6px 100%, 100% 6px, 6px 100%;
-  background-position:    0 0, 100% 0, 100% 100%, 0 100%;
-  animation: anim-ramka-6 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
-  animation-play-state: paused;
- }
- .scale:hover {
-  animation-play-state: running;
+  background-size: cover;
+  background-image: url("../img/gradient.png");
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  /* text-align: center; */
+
+  padding: 35px;
+  padding-top: 30px;
 }
-@keyframes anim-ramka-6 {
-  0% {
-      background-size:    0 6px, 6px 0, 0 6px, 6px 0;
-  }
-  25% {
-      background-size:    100% 6px, 6px 0, 0 6px, 6px 0;
-  }
-  50% {
-      background-size:    100% 6px, 6px 100%, 0 6px, 6px 0;
-  }
-  75% {
-      background-size:    100% 6px, 6px 100%, 100% 6px, 6px 0;
-  }
-  100% {
-      background-size:    100% 6px, 6px 100%, 100% 6px, 6px 100%;
-  }
+
+.work #w1 h2,
+#w2 h2,
+#w3 h2 {
+  width: 270px;
+  margin-bottom: 45px;
+  font-size: 40px;
+  font-weight: bold;
+}
+/* reviews */
+.reviews #p {
+  color: #1e24ac;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.people {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 450px 450px;
+  grid-template-rows: 150px 150px;
+  column-gap: 80px;
+  row-gap: 80px;
+  align-content: center;
+}
+.people {
+  margin-bottom: 50px;
+}
+.people #man1,
+#man2,
+#man3,
+#man4 {
+  border: 1px solid #7b80da;
+  border-radius: 20px;
+  padding: 20px;
+  padding-top: 30px;
+}
+
+.people #man1,
+#man2,
+#man3,
+#man4 {
+  display: grid;
+  grid-template-columns: 100px 250px;
+  column-gap: 20px;
+  font-size: 20px;
+  align-content: center;
+}
+#txtUs {
+  color: #1e24ac;
+}
+#rev {
+  color: #f64c71;
+}
+
+.people img {
+  width: 100px;
 }
 /* footer */
 .footer {
@@ -228,9 +265,7 @@ to {opacity: 1}
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 300px;
-  margin-top: 10px;
 }
-
 .footer .str {
   margin-left: 50px;
 }
@@ -259,4 +294,14 @@ to {opacity: 1}
 }
 .footer p {
   color: white;
+}
+
+#footerLink a {
+  color: #ffffff;
+}
+#footerLink a {
+  text-decoration: none;
+}
+.menuLink a:hover{
+  color: #f64c71;
 }

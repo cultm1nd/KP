@@ -11,12 +11,12 @@ body {
   color: white;
   background-color: #1e24ac;
   display: grid;
-  grid-template-columns: 50px 50px 50px 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px ;
 }
 .header #menu {
   display: grid;
   column-gap: 50px;
-  grid-template-columns: 50px 120px 170px 50px;
+  grid-template-columns: 50px 120px 170px 50px 50px;
   margin-left: 450px;
   margin-top: 50px;
 }
