@@ -94,6 +94,16 @@
     margin-left: 50px;
     margin-top: 50px;
   }
+  summary{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .vac{
+    height: max-content;
+    padding: 15px;
+  }
+
   /* professions */
   h1{
     color: #1e24ac;
@@ -112,8 +122,9 @@
   .vacancies
   {
     display: grid;
-    grid-template-rows:max-content 150px 150px 150px 150px 150px 150px 150px 150px;
+    grid-template-rows:repeat(9, max-content);
     row-gap: 20px;
+    width:100%;
   }
   .vac
   {
@@ -122,7 +133,7 @@
     column-gap: 80px;
     border:1px solid rgb(240, 240, 240);
     border-radius: 60px;
-    width:700px;
+    width:100%;
     box-shadow: 0px 3px 3px 1px rgba(34, 60, 80, 0.2) inset;
     align-items: center;
   }
@@ -135,9 +146,7 @@
   }
   .vac p
   {
-    color: #1e24ac;
-    font-size: 50px;
-    font-weight: bold;
+    width:70%;
   }
   #list
   {
