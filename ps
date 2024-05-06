@@ -1,2 +1,82 @@
 https://developer.mozilla.org/ru/docs/Web/HTML/Element/input/radio
 сделать добавить отзыв
+\
+
+<form id="myForm">  
+    <div class="forms" >  
+      <h1>Данные о вакансии</h1>  
+  
+      <p>Сфера</p>  
+      <select id="card" name="usercard">  
+        <option value="beauty">Красота</option>  
+        <option value="str">Строительство</option>  
+        <option value="it">IT</option>  
+        <option value="sales">Продажи</option>  
+        <option value="fin">Финансы</option>  
+        <option value="med">Медицина</option>  
+        <option value="all">Прочее</option>  
+      </select>  
+      <p>Требования и обязанности</p>  
+      <input type="text" id="text" name="text" required>  
+      <p>Зарплата( руб.)</p>  
+      <input type="number" id="price" name="price" required>  
+      <p>Телефон</p>  
+      <input type="phone" id="number" name="phonenumber" placeholder="+7(123)123‒45‒67" required>  
+      <p>Почта</p>  
+      <input type="email" id="mail" name="usermail" required><br><br>  
+    </div>  
+    <div class="but" id="sub">  
+      <button type="submit" style='background-color:#f64c71; color:#1e24ac;' class="btn btn-primary"  
+        data-bs-toggle="modal" data-bs-target="#exampleModal">  
+        Опубликовать  
+      </button>  
+    </div>  
+    <!-- Модальное окно -->  
+  </form>  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">  
+    <div class="modal-dialog">  
+      <div class="modal-content">  
+        <div class="modal-header">  
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Уважаемый работодатель!</h1>  
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>  
+        </div>  
+        <div class="modal-body">  
+          Данные о предоставляемой вакансии успешно загружены. Соискатели в скором времени увидят Ваше предложение на  
+          странице «Поиск вакансий» и откликнутся.  
+        </div>  
+        <div class="modal-footer">  
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>  
+          <button type="button" class="btn btn-primary">Отлично</button>  
+        </div>  
+      </div>  
+    </div>  
+  </div>
+
+
+
+
+const form = document.getElementById('myForm');
+const submitBtn = form.querySelector('.btn-primary');
+
+submitBtn.addEventListener('click', function(event) {
+  event.preventDefault(); // Предотвращаем отправку формы
+
+  const requiredFields = form.querySelectorAll('input[required], select[required]');
+  let isFormValid = true;
+
+  requiredFields.forEach(function(field) {
+    if (field.value.trim() === '') {
+      isFormValid = false;
+      field.classList.add('is-invalid');
+    } else {
+      field.classList.remove('is-invalid');
+    }
+  });
+
+  if (isFormValid) {
+    // Если все поля заполнены, можно отправлять форму или открывать модальное окно
+    $('#exampleModal').modal('show');
+  } else {
+    alert('Пожалуйста, заполните все обязательные поля формы.');
+  }
+});
